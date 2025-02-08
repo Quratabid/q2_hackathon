@@ -231,6 +231,163 @@ placeholder='Enter your email' />
 lg:w-[349px] lg:h-[46px] w-[280px] h-[42px] p-2 text-black lg:pt-3 bg-white text-center items-center '>
   Subscribe to Newsletter</div></div>
       </div>
+{/*       ///////////////////////////////////////// */}
+      <div className='flex pt-14 px-6'>
+              <h1>Home <span className='mx-3'>/</span></h1>
+              <h1>Casual</h1>
+            </div>
+            <div className='flex  flex-col lg:flex-row'>
+              {/* Sidebar */}
+              <div className='flex-1 items-center lg:w-[250px] px-6 space-y-8'>
+                <div>
+                  <h1 className='font-bold text-[20px] pt-4'>Filters</h1>
+                </div>
+      
+                <div className='text-gray-400 space-y-5'>
+                  <h1>T-shirts</h1>
+                  <h1>Shorts</h1>
+                  <h1>Shirts</h1>
+                  <h1>Hoodie</h1>
+                  <h1>Jeans</h1>
+                </div>
+      
+                <div>
+                  <h1>Price</h1>
+                  <Image src="/line.png" alt='' height={6} width={150} />
+                  <h1 className='mx-1'>$50 <span className='mx-10'></span>$200</h1>
+                </div>
+      
+                <div>
+                  <h1>Colors</h1>
+                  <div className="flex gap-3 pb-3">
+                    {/* Color Circles */}
+                    <div className="bg-green-500 rounded-full h-[37px] w-[37px]"></div>
+                    <div className="bg-blue-500 rounded-full h-[37px] w-[37px]"></div>
+                    <div className="bg-purple-500 rounded-full h-[37px] w-[37px]"></div>
+                    <div className="bg-yellow-500 rounded-full h-[37px] w-[37px]"></div>
+                    <div className="bg-orange-500 rounded-full h-[37px] w-[37px]"></div>
+                   </div> <div className='flex gap-3'>
+                    <div className="bg-blue-500 rounded-full h-[37px] w-[37px]"></div>
+                    <div className="bg-yellow-500 rounded-full h-[37px] w-[37px]"></div>
+                    <div className="bg-orange-500 rounded-full h-[37px] w-[37px]"></div>
+                    <div className="border border-gray-400 rounded-full h-[37px] w-[37px]"></div>
+                    <div className="bg-purple-500 rounded-full h-[37px] w-[37px]"></div>
+                  </div>
+                </div>
+      
+                <div>
+                  <h1>Size</h1>
+                  <div className='  space-y-4 space-x-3'>
+                    {['Small',  'Medium', 'Large','X-Large'].map((size, index) => (
+                      <button key={index} className='text-gray-400 h-[39px] w-[90px] border border-gray-500 bg-gray-100 rounded-full'>
+                        {size}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+      
+                <div className='space-y-4'>
+                  <h1 className='text-[20px] font-bold'>Dress Style</h1>
+                  <h2 className='text-gray-400'>Casual</h2>
+                  <h2 className='text-gray-400'>Formal</h2>
+                  <h2 className='text-gray-400'>Party</h2>
+                  <h2 className='text-gray-400'>Gym</h2>
+                  <div className='border border-gray-400 rounded-full md:w-[247px] lg:h-[48px] w-[295px] h-[48px] p-3 bg-black lg:pt-3 text-white text-center items-center'>
+                    Apply Filter
+                  </div>
+                </div>
+              </div>
+      
+              {/* Products Section */}
+              <div className='flex-1'>
+                <h1 className='text-[32px] font-bold mx-12'>Casual</h1>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 pt-3 justify-center'>
+                  {/* Product 1 */}
+                  <div className='p-5'>
+                    <Image src="/c2.png" height={350} width={270} alt=""/>
+                    <h1 className='mt-3'>Clothes</h1>
+                    <div className='mt-2 flex space-x-1'>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                    </div>
+                    <h1 className='text-[#DB4444] text-[16px] pt-2'>$289</h1>
+                  </div>
+      
+                  {/* Product 2 */}
+                  <div className='p-5'>
+                    <Image src="/c1.png" height={350} width={270} alt=""/>
+                    <h1 className='mt-3'>Clothes</h1>
+                    <div className='mt-2 flex space-x-1'>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                    </div>
+                    <h1 className='text-[#DB4444] text-[16px] pt-2'>$289</h1>
+                  </div>
+      
+                  {/* Product 3 */}
+                  <div className='p-5'>
+                    <Image src="/c3.png" height={350} width={270} alt=""/>
+                    <h1 className='mt-3'>Clothes</h1>
+                    <div className='mt-2 flex space-x-1'>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                    </div>
+                    <h1 className='text-[#DB4444] text-[16px] pt-2'>$289</h1>
+                  </div>
+      
+                  {/* Product 4 */}
+                  <div className='p-5'>
+                    <Image src="/c2.png" height={350} width={270} alt=""/>
+                    <h1 className='mt-3'>Party wear</h1>
+                    <div className='mt-2 flex space-x-1'>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                    </div>
+                    <h1 className='text-[#DB4444] text-[16px] pt-2'>$289</h1>
+                  </div>
+      
+                  {/* Product 5 */}
+                  <div className='p-5'>
+                    <Image src="/c2.png" height={350} width={270} alt=""/>
+                    <h1 className='mt-3'>Menswear</h1>
+                    <div className='mt-2 flex space-x-1'>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                    </div>
+                    <h1 className='text-[#DB4444] text-[16px] pt-2'>$289</h1>
+                  </div>
+      
+                  {/* Product 6 */}
+                  <div className='p-5'>
+                    <Image src="/c1.png" height={350} width={270} alt=""/>
+                    <h1 className='mt-3'>Shirts</h1>
+                    <div className='mt-2 flex space-x-1'>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                      <FaStar className='text-yellow-500'/>
+                    </div>
+                    <h1 className='text-[#DB4444] text-[16px] pt-2'>$289</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
     </div>
   )
 }
